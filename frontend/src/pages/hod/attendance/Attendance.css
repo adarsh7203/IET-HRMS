@@ -1,0 +1,130 @@
+.hod-attendance-wrapper {
+  animation: slideIn 0.5s ease-out;
+}
+
+.table-container {
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.attendance-table th {
+  text-align: left;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.attendance-table td {
+  padding: 20px;
+  border-bottom: 1px solid var(--glass-border);
+  color: white;
+}
+
+.emp-id {
+  font-weight: 700;
+  color: white;
+  font-size: 0.95rem;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-pill.present {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+}
+
+.status-pill.absent {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--danger);
+}
+
+.view-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.view-btn:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.empty-row {
+  text-align: center;
+  padding: 40px !important;
+  color: var(--text-muted);
+}
+
+.attendance-details {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.detail-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.detail-row .icon {
+  color: var(--primary);
+  margin-top: 4px;
+}
+
+.detail-row label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #a5b4fc;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  letter-spacing: 0.05em;
+}
+
+.detail-row p {
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  line-height: 1.4;
+}
+
+.evidence-placeholder {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed var(--glass-border);
+  color: var(--text-muted);
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+  margin-top: 8px;
+  border-radius: 12px;
+}

@@ -1,0 +1,66 @@
+.salary-wrapper {
+  animation: slideIn 0.5s ease-out;
+}
+
+.payslip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.payslip-card {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.slip-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slip-info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.amount-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.amount {
+  font-weight: 700;
+  color: var(--success);
+  font-size: 1.1rem;
+}
+
+.deduction {
+  font-size: 0.85rem;
+  color: var(--danger);
+}
+
+.download-btn {
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid var(--glass-border);
+}
+
+.download-btn:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+}

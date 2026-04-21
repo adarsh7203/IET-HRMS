@@ -1,0 +1,95 @@
+.hod-grievance-wrapper {
+  animation: slideIn 0.5s ease-out;
+}
+
+.complaints-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.complaint-card {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.complaint-card.resolved {
+  opacity: 0.7;
+}
+
+.complaint-main {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+
+.complaint-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.complaint-card.pending .complaint-icon {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--warning);
+}
+
+.complaint-card.resolved .complaint-icon {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+}
+
+.complaint-body {
+  flex: 1;
+}
+
+.complaint-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.emp-tag {
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+}
+
+.emp-tag small {
+  font-weight: 600;
+  color: var(--primary);
+  margin-right: 6px;
+  opacity: 0.8;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.status-badge {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  text-transform: capitalize;
+}
+
+.status-badge.pending { background: var(--warning); color: black; }
+.status-badge.resolved { background: var(--success); color: white; }
+
+.issue-text {
+  color: white;
+  line-height: 1.5;
+}
+
+.resolve-btn {
+  background: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-left: 24px;
+}

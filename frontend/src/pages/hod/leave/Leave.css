@@ -1,0 +1,185 @@
+.hod-leave-wrapper {
+  animation: slideIn 0.5s ease-out;
+}
+
+.page-header {
+  margin-bottom: 32px;
+}
+
+.leave-requests {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.leave-card {
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr;
+  align-items: center;
+  gap: 32px;
+}
+
+.leave-user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-avatar {
+  width: 44px;
+  height: 44px;
+  background: var(--primary);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: white;
+}
+
+.reason {
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.leave-dates {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.date-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.arrow {
+  color: var(--text-muted);
+}
+
+.leave-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 24px;
+  color: white;
+  border-left: 4px solid var(--primary);
+  padding-left: 12px;
+}
+
+.leave-history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-item-mini {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-radius: 12px;
+}
+
+.history-info strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.history-info p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.reason-small {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.status-tag-mini {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-tag-mini.approved { background: rgba(16, 185, 129, 0.1); color: var(--success); }
+.status-tag-mini.rejected { background: rgba(239, 68, 68, 0.1); color: var(--danger); }
+
+.empty-text {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 20px;
+  font-style: italic;
+}
+
+.id-tag {
+  font-size: 0.8rem;
+  color: var(--primary);
+  background: rgba(99, 102, 241, 0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.id-tag-mini {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-family: 'Courier New', Courier, monospace;
+  margin-right: 6px;
+}
+
+.leave-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.approve-btn {
+  flex: 1;
+  background: var(--success);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.reject-btn {
+  flex: 1;
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--danger);
+  border: 1px solid var(--danger);
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.empty-state {
+  padding: 64px;
+  text-align: center;
+  color: var(--text-muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}

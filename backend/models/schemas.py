@@ -1,4 +1,4 @@
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel
 from typing import List, Optional
 from datetime import date
 
@@ -12,13 +12,13 @@ class TokenData(BaseModel):
     role: Optional[str] = None
 
 class UserLogin(BaseModel):
-    email: EmailStr
+    email: str
     password: str
 
 # Employee Schemas
 class EmployeeBase(BaseModel):
     name: str
-    email: EmailStr
+    email: str
     role: str
     department_id: Optional[int] = None
     salary: int
@@ -28,7 +28,7 @@ class EmployeeCreate(EmployeeBase):
 
 class EmployeeUpdate(BaseModel):
     name: Optional[str] = None
-    email: Optional[EmailStr] = None
+    email: Optional[str] = None
     role: Optional[str] = None
     department_id: Optional[int] = None
     salary: Optional[int] = None
